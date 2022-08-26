@@ -1,10 +1,15 @@
-Hello, I'm Nat. Feel free to bask in the sparseness of this page...
+## Currently Woking On
 
-## 🧠 Things I'm Currently Learning
+[⛰️ Backend Development](pages/journeys/backend-dev.md)
 
-## ⚙️ Projects I Did For Fun
+## Projects Done For Fun
+
 [Vacblocks](https://vacblocks.glitch.me)
 
 [Traintack](https://traintrack.glitch.me)
 
 [Sentiments](https://nchng002.github.io/sentiments)
+
+## Quick Reference
+
+[🐧 Linux Troubleshooting](pages/topics/linux/linux_troubleshooting.md)
