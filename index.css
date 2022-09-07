@@ -1,0 +1,7 @@
+body {
+    background-color: #1a1a2e;
+}
+
+.fixed-width {
+    max-width: 540px;
+}
