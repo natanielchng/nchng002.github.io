@@ -1,6 +1,15 @@
-## Recent Project
+# `Hi, I'm Nat`
+Computer Science undergraduate at NTU
 
-### Vaccination Smart Contract
+---
 
-This project aims to demonstrate how vaccinations can be tracked on the blockchain.  
-View the repository [here](https://github.com/nchng002/vacblock).
+<br>
+
+## `// TODO`
+
+☑ Create a minimal website with funky fonts  
+☐ Write an article on Medium  
+☐ Build a spicy script 🌶️  
+☐ Create a section to showcase work
+
+<br>
