@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black-1: #2E2E2E;
+    --black-2: #3C3C3C;
+    --orange-1: #FF8C42;
+    --yellow-1: #FFD700;
+    --white-1: #E0E0E0;
+    --red-1: #FF4C4C;  
+
+    --primary-color: var(--yellow-1);
+    --secondary-color: var(--yellow-1);
+    --background-color: var(--black-1);
+    --text-color: var(--white-1);
+    --accent-color: var(--red-1);
+    --card-background-color: var(--black-2);
+
+    --text-font-family: "Public Sans", sans-serif;
+    --header-font-family: "Lexend Mega", sans-serif;
+
+    --card-margin: 0%;
+    --card-width: auto;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+p, figcaption {
+    font-family: var(--text-font-family);
+    color: var(--text-color);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font-family);
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+figcaption {
+    font-size: small;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+.card {
+    background-color: var(--card-background-color);
+    width: var(--card-width);
+    margin: var(--card-margin);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 3px solid #000;
+    box-shadow: -3px 3px 0px #000000;
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card-content {
+    padding: 16px
+}
+
+.center-text {
+    text-align: center;
+}
