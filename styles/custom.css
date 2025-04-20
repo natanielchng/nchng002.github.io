@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+    font-family: 'Red Hat Mono';
+    src: url('./font/RedHatMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Red Hat Mono';
+    src: url('./font/RedHatMono-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Red Hat Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
