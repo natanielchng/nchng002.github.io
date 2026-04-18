@@ -5,25 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <linK  rel="stylesheet" href="/styles/pico/pico.min.css"/>
-    <title>Hey, it's Nat!</title>
+    <!-- <link rel="stylesheet" href="./styles/pico/pico.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css">
+    <title>Hi, I'm Nat!</title>
 </head>
+
+<style>
+    html, body {
+        min-height: 100vh;
+        background-color: var(--pico-color-sand-950);
+    }
+    .banner {
+        background-image: url(./banner.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
 
 <body>
     <main class="container">
-        <hgroup style="text-align: center;">
-            <h1>Nataniel Chng</h1>
-            <p>network engineer / vibe coder</p>
-        </hgroup>
-        <div class="grid" style="text-align: center;">
-            <article>
-                <header></header>
-                <p>
-                    <a href="https://loggage.natanielchng.com">Loggage</a>
-                    -- turn CLI logs into screenshots
-                </p>
-            </article>
+        <article class="banner">
+            <h1 class="pico-color-sand-950">Nataniel Chng</h1>
+            <p class="pico-color-sand-950">Network Engineer — Projects & Implementation ┃ Juniper, F5, Symantec ┃ NTU Computer Science</p>
+        </article>
+        <br><br>
+        <div class="grid">
+            <hr>
+            <p class="pico-color-sand-100" style="text-align: center;">Projects and Explorations</p>
+            <hr>
         </div>
+        <div id="links-container"></div>  
     </main>
 </body>
 </html>
+
+<script>
+  const linksDict = {
+    "https://github.com/natanielchng/projects/blob/main/Swiss%20Army%20VM/The%20Swiss%20Army%20VM.md": "The Swiss Army VM: Using Python Netmiko and Linux frr in Juniper vLABs",
+    "https://github.com/natanielchng/projects/blob/main/Diagramming/lazydiagramming.md": "Lazy Diagramming with N2G",
+    "https://github.com/natanielchng/projects/blob/main/Config%20Diff/Confg%20Diff.md": "Config Diff: A Proposed Way To Visualise Juniper Set File Differences",
+    "https://github.com/natanielchng/0x4067": "0x4067: A set of Capture-The-Flag tutorials for NTU's Software Security course",
+    "https://dev.to/natanielchng/how-to-set-up-a-clean-development-environment-with-docker-and-alpine-linux-4ff": "How to Set Up a Clean Development Environment with Docker and Alpine Linux",
+    "https://dev.to/natanielchng/a-step-by-step-guide-to-building-your-private-cloud-with-nextcloud-2023-em5":"A Step-by-Step Guide to Building Your Private Cloud with Nextcloud (2023)"
+  };
+
+  const container = document.getElementById('links-container');
+  const entries = Object.entries(linksDict);
+  for (const [link, title] of Object.entries(linksDict)) {
+    const html = `
+      <article class="pico-background-grey-900">
+        <a href="${link}" target="_blank" class="pico-color-sand-100">${title}</a>
+      </article>
+    `;    
+    container.insertAdjacentHTML('beforeend', html);
+  }
+
+</script>
